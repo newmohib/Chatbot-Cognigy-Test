@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Parcel Sandbox</title>
+  <meta charset="UTF-8" />
+  <style>
+    html {
+      background-color: #eee;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 1. Load the webchat.js bundle via a script tag -->
+  <script src="https://github.com/Cognigy/WebchatWidget/releases/download/v2.10.3/webchat.js"></script>
+
+  <!-- Initialize the Webchat towards a Cogngiy Endpoint via initWebchat() -->
+  <script>
+
+    initWebchat(
+      "https://endpoint-demo.cognigy.ai/817b28adeb279e8b2f175e63b0c7f0d71de7f00b6a9635efabad8339c8444a35",
+      {
+        userId: "documentation-reader",
+        forceWebsockets: true,
+        settings: {
+          colorScheme: "#fab",
+          startBehavior:"button",
+          getStartedText:"Welcome Our Home Page",
+          getStartedButtonText:"Welcome",
+
+        }
+      }
+    );
+
+    // initWebchat(
+    //   "https://endpoint-demo.cognigy.ai/817b28adeb279e8b2f175e63b0c7f0d71de7f00b6a9635efabad8339c8444a35"
+    // );
+
+    // initWebchat(
+    //   "https://endpoint-demo.cognigy.ai/817b28adeb279e8b2f175e63b0c7f0d71de7f00b6a9635efabad8339c8444a35",
+    //   {
+    //     userId: "documentation-reader",
+    //     forceWebsockets: true,
+    //     settings: {
+    //       colorScheme: "#fab",
+    //       startBehavior:"button",
+    //       getStartedText:"Welcome Our Home Page",
+    //       getStartedButtonText:"Welcome",
+
+    //     }
+    //   }
+    // ).then(webchat => {
+    //   window.webchat = webchat;
+    //   webchat.open();
+    // });
+
+
+    // initWebchat(
+    //   "https://endpoint-demo.cognigy.ai/817b28adeb279e8b2f175e63b0c7f0d71de7f00b6a9635efabad8339c8444a35",
+    //   {
+    //     userId: "documentation-reader",
+    //     forceWebsockets: true,
+    //     settings: {
+    //       colorScheme: "#fab",
+    //       startBehavior:"button",
+    //       getStartedText:"Welcome Our Home Page",
+    //       getStartedButtonText:"Welcome",
+
+    //     }
+    //   }
+    // ).then(webchat => {
+    //   window.webchat = webchat;
+    //   webchat.open();
+    //   webchat.sendMessage("hello world!");
+    // });
+
+
+    // initWebchat(
+    //   "https://endpoint-demo.cognigy.ai/817b28adeb279e8b2f175e63b0c7f0d71de7f00b6a9635efabad8339c8444a35",
+    //   {
+    //     userId: "documentation-reader",
+    //     forceWebsockets: true,
+    //     settings: {
+    //       colorScheme: "#fab",
+    //       startBehavior: "button",
+    //       getStartedText: "Welcome Our Home Page",
+    //       getStartedButtonText: "Welcome",
+
+    //     }
+    //   }
+    // ).then(webchat => {
+    //   window.webchat = webchat;
+    //   webchat.open();
+    //   webchat.sendMessage("", {
+    //     origin: "sendMessage method"
+    //   });
+    // });
+
+
+
+//     initWebchat(
+//       "https://endpoint-demo.cognigy.ai/817b28adeb279e8b2f175e63b0c7f0d71de7f00b6a9635efabad8339c8444a35",
+//       {
+//         userId: "documentation-reader",
+//         forceWebsockets: true,
+//         settings: {
+//           colorScheme: "#fab",
+//           startBehavior: "button",
+//           getStartedText: "Welcome Our Home Page",
+//           getStartedButtonText: "Welcome",
+
+//         }
+//       }
+//     ).then(webchat => {
+//       window.webchat = webchat;
+//       webchat.open();
+//       webchat.sendMessage("", {}, {
+//     label: "foobar"
+// });
+//     });
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>
